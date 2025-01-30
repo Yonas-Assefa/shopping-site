@@ -4,6 +4,7 @@ import "swiper/swiper.scss";
 import "rc-slider/assets/index.css";
 import "react-rater/lib/react-rater.css";
 import "../../styles/globals.css";
+
 // types
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";

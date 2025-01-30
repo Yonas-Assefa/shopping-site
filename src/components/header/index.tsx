@@ -18,7 +18,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
   const arrayPaths = ["/"];
 
   const [onTop, setOnTop] = useState(
-    !(!arrayPaths.includes(router.pathname) || isErrorPage)
+    !(!arrayPaths.includes(router.pathname) || isErrorPage),
   );
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);

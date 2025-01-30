@@ -23,7 +23,7 @@ const ProductItem = ({
     dispatch(
       toggleFavProduct({
         id,
-      })
+      }),
     );
   };
 

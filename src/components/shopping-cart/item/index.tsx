@@ -24,7 +24,7 @@ const ShoppingCart = ({
         size,
         count,
         price,
-      })
+      }),
     );
   };
 

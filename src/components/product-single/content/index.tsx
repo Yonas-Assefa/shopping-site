@@ -28,14 +28,14 @@ const Content = ({ product }: ProductContent) => {
   const { favProducts } = useSelector((state: RootState) => state.user);
   const isFavourite = some(
     favProducts,
-    (productId) => productId === product.id
+    (productId) => productId === product.id,
   );
 
   const toggleFav = () => {
     dispatch(
       toggleFavProduct({
         id: product.id,
-      })
+      }),
     );
   };
 
