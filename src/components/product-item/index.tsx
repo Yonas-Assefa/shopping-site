@@ -23,7 +23,7 @@ const ProductItem = ({
     dispatch(
       toggleFavProduct({
         id,
-      }),
+      })
     );
   };
 
@@ -48,9 +48,9 @@ const ProductItem = ({
         <div
           className={`product__price ${discount ? "product__price--discount" : ""}`}
         >
-          <h4>${currentPrice}</h4>
+          <h4>₹{currentPrice}</h4>
 
-          {discount && <span>${price}</span>}
+          {discount && <span>₹{price}</span>}
         </div>
       </div>
     </div>

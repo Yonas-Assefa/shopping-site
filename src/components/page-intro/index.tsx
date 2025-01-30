@@ -10,11 +10,12 @@ const PageIntro = () => {
         <SwiperSlide>
           <div
             className="page-intro__slide"
-            style={{ backgroundImage: "url('/images/slide-1.jpg')" }}
+            style={{ backgroundImage: "url('/images/tslide-one.png')" }}
           >
             <div className="container">
-              <div className="page-intro__slide__content">
+              <div className=" page-intro__slide__content">
                 <h2>Sale of the summer collection</h2>
+
                 <a href="#" className="btn-shop">
                   <i className="icon-right" />
                   Shop now
@@ -27,7 +28,7 @@ const PageIntro = () => {
         <SwiperSlide>
           <div
             className="page-intro__slide"
-            style={{ backgroundImage: "url('/images/slide-2.jpg')" }}
+            style={{ backgroundImage: "url('/images/tslide-two.png')" }}
           >
             <div className="container">
               <div className="page-intro__slide__content">
@@ -49,7 +50,7 @@ const PageIntro = () => {
               <i className="icon-shipping" />
               <div className="data-item__content">
                 <h4>Free Shipping</h4>
-                <p>On purchases over $199</p>
+                <p>On purchases over ₹199</p>
               </div>
             </li>
 
