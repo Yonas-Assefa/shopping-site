@@ -9,7 +9,7 @@ export const products = [
     currentPrice: 89.99,
     sizes: ["xl", "l"],
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ["/images/products/product-1.jpg"],
+    images: ["/images/products/GUIDE-CHAIN KIT -BAJAJ.jpg"],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -69,7 +69,7 @@ export const products = [
     currentPrice: 89.99,
     sizes: ["xl", "l"],
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ["/images/products/product-2.jpg"],
+    images: ["/images/products/KIT-ENGINE-VALVE -TVS KING.jpg"],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -129,7 +129,7 @@ export const products = [
     currentPrice: 89.99,
     sizes: ["xl", "l"],
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ["/images/products/product-3.jpg"],
+    images: ["/images/products/RUSH-BOX-KIT.jpg"],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -182,14 +182,14 @@ export const products = [
   },
   {
     id: "4",
-    name: "T-Shirt Summer Vibes",
+    name: "rear buffer maruti van 500x500.webp",
     price: 119.99,
     quantityAvailable: 2,
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ["/images/products/product-4.jpg"],
+    images: ["/images/products/rear-buffer-maruti-van-500x500.webp"],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -242,14 +242,14 @@ export const products = [
   },
   {
     id: "5",
-    name: "T-Shirt Summer Vibes",
+    name: "Gear Shifter Rails Bengaluru, Karnataka",
     price: 119.99,
     quantityAvailable: 2,
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ["/images/products/product-5.jpg"],
+    images: ["/images/products/rail-shifter-250x250.webp"],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,

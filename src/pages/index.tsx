@@ -13,23 +13,20 @@ const IndexPage = () => {
       <section className="featured">
         <div className="container">
           <article
-            style={{ backgroundImage: "url(/images/featured-1.jpg)" }}
+            style={{ backgroundImage: "url(/images/featured-1.webp)" }}
             className="featured-item featured-item-large"
           >
             <div className="featured-item__content">
               <h3>New arrivals are now in!</h3>
-              <a href="#" className="btn btn--rounded">
-                Show Collection
-              </a>
             </div>
           </article>
 
           <article
-            style={{ backgroundImage: "url(/images/featured-2.jpg)" }}
+            style={{ backgroundImage: "url(/images/featured-2.webp)" }}
             className="featured-item featured-item-small-first"
           >
             <div className="featured-item__content">
-              <h3>Basic t-shirts ₹29,99</h3>
+              <h3>RSI Base Plate ₹125</h3>
               <a href="#" className="btn btn--rounded">
                 More details
               </a>
@@ -37,14 +34,11 @@ const IndexPage = () => {
           </article>
 
           <article
-            style={{ backgroundImage: "url(/images/featured-3.jpg)" }}
+            style={{ backgroundImage: "url(/images/featured-3..jpg)" }}
             className="featured-item featured-item-small"
           >
             <div className="featured-item__content">
-              <h3>Sale this summer</h3>
-              <a href="#" className="btn btn--rounded">
-                VIEW ALL
-              </a>
+              <h3>Rubber And Steel AD-ASK-007 FL Air Shocks, For Automotive</h3>
             </div>
           </article>
         </div>
@@ -62,7 +56,7 @@ const IndexPage = () => {
               <div className="data-item__content">
                 <h4>Free Shipping</h4>
                 <p>
-                  All purchases over $199 are eligible for free shipping via
+                  All purchases over ₹199 are eligible for free shipping via
                   USPS First Class Mail.
                 </p>
               </div>

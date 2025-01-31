@@ -7,11 +7,13 @@ const Footer = () => {
         <div className="site-footer__top">
           <div className="site-footer__description">
             <h6>
-              <Logo /> <span>E</span>-Shop
+              <Logo /> ShaktiTri Auto Parts <br />
+              शक्तीत्री ऑटो पार्ट्स
             </h6>
             <p>
-              House My Brand designs clothing for the young, the old & everyone
-              in between – but most importantly, for the fashionable
+              Built for durability, designed for performance—ShaktiTri Auto
+              Parts offers top-tier spare parts for all three-wheeler models.
+              Every journey deserves reliability.
             </p>
             <ul className="site-footer__social-networks">
               <li>
@@ -82,10 +84,16 @@ const Footer = () => {
             <ul>
               <li>Contact</li>
               <li>
-                <a href="#">store@uikit.com</a>
+                <a href="#">store@ShaktiTri.com</a>
               </li>
               <li>
-                <a href="#">Hotline: +1 131 138 138</a>
+                <a href="#">Hotline: 011-23456789 (Delhi)</a>
+              </li>{" "}
+              <li>
+                <a href="#">Hotline: 022-87654321 (Mumbai)</a>
+              </li>{" "}
+              <li>
+                <a href="#">Cell phone: +91 9988776655</a>
               </li>
             </ul>
           </div>
@@ -94,7 +102,7 @@ const Footer = () => {
 
       <div className="site-footer__bottom">
         <div className="container">
-          <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+          <p>DESIGN BY ICEO.CO - © 2025. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>
