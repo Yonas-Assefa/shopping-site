@@ -3,7 +3,7 @@ const Subscribe = () => {
     <section className="subscribe">
       <div className="container">
         <div
-          style={{ backgroundImage: "url(/images/subscribe.jpg)" }}
+          style={{ backgroundImage: "url(/images/newslatter-image.webp)" }}
           className="subscribe__content"
         >
           <h4>

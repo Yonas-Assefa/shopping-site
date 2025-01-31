@@ -27,9 +27,6 @@ const IndexPage = () => {
           >
             <div className="featured-item__content">
               <h3>RSI Base Plate ₹125</h3>
-              <a href="#" className="btn btn--rounded">
-                More details
-              </a>
             </div>
           </article>
 

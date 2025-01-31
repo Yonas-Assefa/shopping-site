@@ -82,18 +82,18 @@ const Footer = () => {
               </li>
             </ul>
             <ul>
-              <li>Contact</li>
+              <li>🇮🇳 Contact</li>
               <li>
-                <a href="#">store@ShaktiTri.com</a>
+                <a href="mailto:store@ShaktiTri.com">store@ShaktiTri.com</a>
               </li>
               <li>
-                <a href="#">Hotline: 011-23456789 (Delhi)</a>
-              </li>{" "}
+                <a href="tel:01123456789">Hotline: 011-23456789 (Delhi)</a>
+              </li>
               <li>
-                <a href="#">Hotline: 022-87654321 (Mumbai)</a>
-              </li>{" "}
+                <a href="tel:02287654321">Hotline: 022-87654321 (Mumbai)</a>
+              </li>
               <li>
-                <a href="#">Cell phone: +91 9988776655</a>
+                <a href="tel:+919988776655">Cell phone: +91 9988776655</a>
               </li>
             </ul>
           </div>

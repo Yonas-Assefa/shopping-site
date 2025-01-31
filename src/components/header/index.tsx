@@ -70,15 +70,16 @@ const Header = ({ isErrorPage }: HeaderType) => {
           ref={navRef}
           className={`site-nav ${menuOpen ? "site-nav--open" : ""}`}
         >
-          <Link href="/products">Products</Link>
-          <a href="#">Inspiration</a>
-          <a href="#">Rooms</a>
+          {/* <a href="#">Inspiration</a>
+          <a href="#">Rooms</a> */}
           <button className="site-nav__btn">
             <p>Account</p>
           </button>
         </nav>
 
         <div className="site-header__actions">
+          <Link href="/products">Products</Link>
+
           <button
             ref={searchRef}
             className={`search-form-wrapper ${searchOpen ? "search-form--active" : ""}`}
