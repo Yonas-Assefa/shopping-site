@@ -7,28 +7,19 @@ import Subscribe from "@/components/subscribe";
 
 import Layout from "../layouts/Main";
 
-// Static metadata generation for static pages
+export function generateStaticParams() {
+  return;
+}
+
 export async function generateMetadata() {
   return {
-    title: "Your Website Title",
-    description: "A short description of your website or page.",
-    icons: ["/images/main-log.webp"],
-
-    // Open Graph metadata
+    title: "ShaktiTri - Leading three wheeler spare parts saler in India",
+    description:
+      "ShaktiTri Auto Parts offers top-tier spare parts for all three-wheeler models. Every journey deserves reliability.",
+    icons: ["/images/main-logo.webp"],
     openGraph: {
-      images: [
-        "/images/main-logo.webp", // Replace with the actual URL to your image
-      ],
-      title: "Your Website Title",
-      description: "A short description of your website or page.",
-    },
-
-    // Twitter Card metadata
-    twitter: {
-      title: "Your Website Title",
-      description: "A short description of your website or page.",
-      image: "https://yourdomain.com/path-to-image.jpg", // Replace with actual image URL
-      card: "summary_large_image",
+      images: ["/images/main-logo.webp"],
+      title: "ShaktiTri - Leading three wheeler spare parts saler in India",
     },
   };
 }
