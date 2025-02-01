@@ -6,6 +6,33 @@ import ProductsFeatured from "@/components/products-featured";
 import Subscribe from "@/components/subscribe";
 
 import Layout from "../layouts/Main";
+
+// Static metadata generation for static pages
+export async function generateMetadata() {
+  return {
+    title: "Your Website Title",
+    description: "A short description of your website or page.",
+    icons: ["/images/main-log.webp"],
+
+    // Open Graph metadata
+    openGraph: {
+      images: [
+        "/images/main-logo.webp", // Replace with the actual URL to your image
+      ],
+      title: "Your Website Title",
+      description: "A short description of your website or page.",
+    },
+
+    // Twitter Card metadata
+    twitter: {
+      title: "Your Website Title",
+      description: "A short description of your website or page.",
+      image: "https://yourdomain.com/path-to-image.jpg", // Replace with actual image URL
+      card: "summary_large_image",
+    },
+  };
+}
+
 const IndexPage = () => {
   return (
     <>
@@ -18,11 +45,10 @@ const IndexPage = () => {
         />
         <meta
           property="og:image"
-          content="https://yourdomain.com/path-to-image.jpg"
+          content="https://yourdomain.com/path-to-image.jpg" // Replace with actual image URL
         />
         <meta property="og:url" content="https://yourwebsite.com" />
         <meta property="og:type" content="website" />
-
         {/* Twitter Card Tags */}
         <meta name="twitter:title" content="Your Website Title" />
         <meta
@@ -31,13 +57,12 @@ const IndexPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/path-to-image.jpg"
+          content="/images/main-logo.webp" // Replace with actual image URL
         />
         <meta name="twitter:card" content="summary_large_image" />
-
         {/* Other meta tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Your Website Title</title>
+        <title>Your Website Title</title> {/* Static Title */}
       </Head>
 
       <Layout>
@@ -64,7 +89,7 @@ const IndexPage = () => {
             </article>
 
             <article
-              style={{ backgroundImage: "url(/images/featured-3..jpg)" }}
+              style={{ backgroundImage: "url(/images/featured-3.jpg)" }}
               className="featured-item featured-item-small"
             >
               <div className="featured-item__content">
