@@ -1,6 +1,9 @@
-import type { GetStaticProps, GetStaticPaths } from "next";
-import { useState } from "react";
+import type { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
+import type { ParsedUrlQuery } from "querystring"; // For type definitions
+import { useState } from "react";
+import useSWR from "swr";
+
 import Breadcrumb from "@/components/breadcrumb";
 import Footer from "@/components/footer";
 import Content from "@/components/product-single/content";
@@ -13,8 +16,6 @@ import type { ProductType } from "@/types";
 
 import Layout from "../../layouts/Main";
 import { server } from "../../utils/server";
-import useSWR from "swr";
-import { ParsedUrlQuery } from "querystring"; // For type definitions
 
 type ProductPageType = {
   productId: string;
@@ -50,7 +51,7 @@ const Product = ({ productId }: ProductPageType) => {
 
   // Use SWR to fetch product data
   const { data: product, error } = useSWR<ProductType>(
-    `/api/product/${productId}`
+    `/api/product/${productId}`,
   );
 
   // Handle loading and error states
