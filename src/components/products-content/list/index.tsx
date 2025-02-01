@@ -1,6 +1,7 @@
 import useSwr from "swr";
-import { useEffect, useState } from "react";
+
 import type { ProductTypeList } from "@/types";
+
 import ProductItem from "../../product-item";
 import ProductsLoading from "./loading";
 
@@ -39,7 +40,7 @@ const ProductsContent = ({ filters }: ProductsContentProps) => {
   // Use SWR hook to fetch the products data
   const { data, error } = useSwr(
     `/api/products?${generateQueryParams()}`,
-    fetcher
+    fetcher,
   );
 
   if (error) return <div>Failed to load products</div>;

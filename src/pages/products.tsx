@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Breadcrumb from "@/components/breadcrumb";
 import Footer from "@/components/footer";
 import ProductsContent from "@/components/products-content";
@@ -22,7 +23,7 @@ const Products = () => {
   // Function to handle the application of filters
   const handleFiltersApply = (
     selectedFilters: Record<string, string[]>,
-    priceRange: [number, number]
+    priceRange: [number, number],
   ) => {
     setFilters({
       productType: selectedFilters["product-type"] || [],

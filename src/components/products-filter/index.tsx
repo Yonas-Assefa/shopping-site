@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Slider from "rc-slider";
+import { useState } from "react";
 
 import productsTypes from "../../utils/data/products-types";
 import Checkbox from "./form-builder/checkbox";
@@ -11,7 +11,7 @@ const Range = createSliderWithTooltip(Slider.Range);
 interface ProductsFilterProps {
   onApplyFilters: (
     filters: Record<string, string[]>,
-    priceRange: [number, number]
+    priceRange: [number, number],
   ) => void;
 }
 
@@ -27,7 +27,7 @@ const ProductsFilter = ({ onApplyFilters }: ProductsFilterProps) => {
   const handleCheckboxChange = (
     name: string,
     value: string,
-    checked: boolean
+    checked: boolean,
   ) => {
     setSelectedFilters((prev) => {
       const updatedFilters = { ...prev };
@@ -36,7 +36,20 @@ const ProductsFilter = ({ onApplyFilters }: ProductsFilterProps) => {
       } else {
         updatedFilters[name] =
           updatedFilters[name]?.filter((v) => v !== value) || [];
-        if (updatedFilters[name].length === 0) delete updatedFilters[name];
+        if (updatedFilters[name].length === 0) {
+          // Remove the key using reduce
+          const newFilters = Object.keys(updatedFilters).reduce(
+            (acc, key) => {
+              if (key !== name) {
+                acc[key] = updatedFilters[key];
+              }
+              return acc;
+            },
+            {} as Record<string, string[]>,
+          );
+          updateQueryParams(newFilters);
+          return newFilters;
+        }
       }
       updateQueryParams(updatedFilters);
       return updatedFilters;
@@ -83,7 +96,7 @@ const ProductsFilter = ({ onApplyFilters }: ProductsFilterProps) => {
                   handleCheckboxChange(
                     "product-type",
                     type.name,
-                    e.target.checked
+                    e.target.checked,
                   )
                 }
               />
