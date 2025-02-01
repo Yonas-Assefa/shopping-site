@@ -40,6 +40,7 @@ export type ProductTypeList = {
   images: string[];
   discount?: string;
   currentPrice?: number;
+  vehicle_category: string;
 };
 
 export type ProductStoreType = {
