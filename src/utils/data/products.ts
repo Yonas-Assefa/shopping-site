@@ -18,26 +18,11 @@ export const products = [
       countOpinions: 81,
       punctuation: 4.5,
       votes: [
-        {
-          value: 1,
-          count: 1,
-        },
-        {
-          value: 2,
-          count: 10,
-        },
-        {
-          value: 3,
-          count: 10,
-        },
-        {
-          value: 4,
-          count: 20,
-        },
-        {
-          value: 5,
-          count: 40,
-        },
+        { value: 1, count: 1 },
+        { value: 2, count: 10 },
+        { value: 3, count: 10 },
+        { value: 4, count: 20 },
+        { value: 5, count: 40 },
       ],
     },
     reviews: [
@@ -59,7 +44,7 @@ export const products = [
         name: "रवी कुमार",
         avatar: "/images/comment-1.jpg",
         description:
-          "<p>समान रूप से संतुष्ट हूँ, सब कुछ सही था लेकिन थोड़ा महँगा लगता है।</p>", // "I am equally satisfied, everything was fine but it feels a bit expensive."
+          "<p>समान रूप से संतुष्ट हूँ, सब कुछ सही था लेकिन थोड़ा महँगा लगता है।</p>",
         punctuation: 4,
       },
     ],
@@ -71,10 +56,10 @@ export const products = [
     vehicle_category: "TVS",
     vehicle_description:
       "A high-quality engine valve kit made in India, designed for TVS King auto rickshaws. Ensures optimal engine performance and longevity.",
-    price: 119.99,
+    price: 79.99,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 79.99,
     sizes: ["xl", "l"],
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ["/images/products/KIT-ENGINE-VALVE -TVS KING.jpg"],
@@ -82,26 +67,11 @@ export const products = [
       countOpinions: 81,
       punctuation: 4.5,
       votes: [
-        {
-          value: 1,
-          count: 1,
-        },
-        {
-          value: 2,
-          count: 10,
-        },
-        {
-          value: 3,
-          count: 10,
-        },
-        {
-          value: 4,
-          count: 20,
-        },
-        {
-          value: 5,
-          count: 40,
-        },
+        { value: 1, count: 1 },
+        { value: 2, count: 10 },
+        { value: 3, count: 10 },
+        { value: 4, count: 20 },
+        { value: 5, count: 40 },
       ],
     },
     reviews: [
@@ -118,31 +88,6 @@ export const products = [
         description: "<p>Very happy with my purchase! Will buy again.</p>",
         punctuation: 5,
       },
-      {
-        name: "Rahul Kumar",
-        avatar: "/images/comment-1.jpg",
-        description: "<p>Decent service, but packaging was poor.</p>",
-        punctuation: 4,
-      },
-      {
-        name: "Neha Reddy",
-        avatar: "/images/comment-1.jpg",
-        description: "<p>Good experience, fast shipping, but a bit pricey.</p>",
-        punctuation: 4,
-      },
-      {
-        name: "Suresh Gupta",
-        avatar: "/images/comment-1.jpg",
-        description: "<p>Not bad, but expected more based on reviews.</p>",
-        punctuation: 2,
-      },
-      {
-        name: "Sunita Sharma",
-        avatar: "/images/comment-1.jpg",
-        description:
-          "<p>Very satisfied! Great product quality and service.</p>",
-        punctuation: 5,
-      },
     ],
   },
   {
@@ -152,10 +97,10 @@ export const products = [
     vehicle_category: "BOX_KIT",
     vehicle_description:
       "Indian-made rush box kit designed for efficient transmission and smooth gear shifts. Reliable and durable for long-term use.",
-    price: 119.99,
+    price: 109.99,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 84.99,
     sizes: ["xl", "l"],
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ["/images/products/RUSH-BOX-KIT.jpg"],
@@ -163,60 +108,37 @@ export const products = [
       countOpinions: 81,
       punctuation: 4.5,
       votes: [
-        {
-          value: 1,
-          count: 1,
-        },
-        {
-          value: 2,
-          count: 10,
-        },
-        {
-          value: 3,
-          count: 10,
-        },
-        {
-          value: 4,
-          count: 20,
-        },
-        {
-          value: 5,
-          count: 40,
-        },
+        { value: 1, count: 1 },
+        { value: 2, count: 10 },
+        { value: 3, count: 10 },
+        { value: 4, count: 20 },
+        { value: 5, count: 40 },
       ],
     },
     reviews: [
       {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
+        name: "Rajesh Verma",
+        avatar: "/images/comment-1.jpg",
         description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
+          "<p>Great product! Smooth gear shifts and easy installation.</p>",
         punctuation: 5,
+      },
+      {
+        name: "Manoj Das",
+        avatar: "/images/comment-1.jpg",
+        description: "<p>Works fine, but I expected better durability.</p>",
+        punctuation: 3,
       },
     ],
   },
   {
     id: "4",
-    name: "rear buffer maruti van",
+    name: "REAR BUFFER MARUTI VAN",
     productId: "K320960",
     vehicle_category: "BOX_KIT",
     vehicle_description:
-      "Indian-made rush box kit designed for efficient transmission and smooth gear shifts. Reliable and durable for long-term use.",
-    price: 119.99,
+      "Durable rear buffer designed for Maruti vans. Ensures vehicle safety and longevity.",
+    price: 99.99,
     quantityAvailable: 2,
     category: "T-shirt",
     currentPrice: 89.99,
@@ -227,52 +149,29 @@ export const products = [
       countOpinions: 81,
       punctuation: 4.5,
       votes: [
-        {
-          value: 1,
-          count: 1,
-        },
-        {
-          value: 2,
-          count: 10,
-        },
-        {
-          value: 3,
-          count: 10,
-        },
-        {
-          value: 4,
-          count: 20,
-        },
-        {
-          value: 5,
-          count: 40,
-        },
+        { value: 1, count: 1 },
+        { value: 2, count: 10 },
+        { value: 3, count: 10 },
+        { value: 4, count: 20 },
+        { value: 5, count: 40 },
       ],
     },
     reviews: [
       {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
+        name: "Vikram Singh",
+        avatar: "/images/comment-1.jpg",
+        description: "<p>Perfect fit for my van! Highly recommended.</p>",
         punctuation: 5,
+      },
+      {
+        name: "Sunil Mehta",
+        avatar: "/images/comment-1.jpg",
+        description: "<p>Decent quality but took longer to arrive.</p>",
+        punctuation: 4,
       },
     ],
   },
+
   {
     id: "5",
     name: "Gear Shifter Rails Bengaluru, Karnataka",
@@ -285,55 +184,40 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
-    colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
+    colors: ["#000", "#6F3E18", "#D4BE8D", "#FFF"],
     images: ["/images/products/rail-shifter-250x250.webp"],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
       votes: [
-        {
-          value: 1,
-          count: 1,
-        },
-        {
-          value: 2,
-          count: 10,
-        },
-        {
-          value: 3,
-          count: 10,
-        },
-        {
-          value: 4,
-          count: 20,
-        },
-        {
-          value: 5,
-          count: 40,
-        },
+        { value: 1, count: 1 },
+        { value: 2, count: 10 },
+        { value: 3, count: 10 },
+        { value: 4, count: 20 },
+        { value: 5, count: 40 },
       ],
     },
     reviews: [
       {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
+        name: "Arjun Patel",
+        avatar: "/images/comment-1.jpg",
         description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
+          "<p>Decent quality but took a while to install. Works fine so far.</p>",
+        punctuation: 3,
       },
       {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
+        name: "Michael Brown",
+        avatar: "/images/comment-1.jpg",
         description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
+          "<p>Very smooth gear shifts. Good build quality. Worth the price.</p>",
         punctuation: 5,
+      },
+      {
+        name: "Suresh Kumar",
+        avatar: "/images/comment-1.jpg",
+        description:
+          "<p>Product is okay, but packaging was a bit damaged. Could be improved.</p>",
+        punctuation: 4,
       },
     ],
   },

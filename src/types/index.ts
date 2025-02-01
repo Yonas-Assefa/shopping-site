@@ -29,6 +29,7 @@ export type ProductType = {
   currentPrice: number;
   punctuation: PunctuationType;
   reviews: ReviewType[];
+  vehicle_description: string;
 };
 
 export type ProductTypeList = {

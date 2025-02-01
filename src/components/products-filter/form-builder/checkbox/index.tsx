@@ -2,9 +2,8 @@ type CheckboxType = {
   type?: string;
   label: string;
   name: string;
-  onChange?: () => void;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void; // Accept event argument
 };
-
 const Checkbox = ({ type = "", label, name, onChange }: CheckboxType) => (
   <label
     htmlFor={`${label}-${name}`}

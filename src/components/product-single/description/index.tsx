@@ -1,8 +1,9 @@
 type ProductDescriptionType = {
+  productDesc: string;
   show: boolean;
 };
 
-const Description = ({ show }: ProductDescriptionType) => {
+const Description = ({ productDesc, show }: ProductDescriptionType) => {
   const style = {
     display: show ? "flex" : "none",
   };
@@ -12,14 +13,9 @@ const Description = ({ show }: ProductDescriptionType) => {
       <div className="product-description-block">
         <i className="icon-cart" />
         <h4>Details and product description</h4>
-        <p>
-          White Summer Vibes T-shirt in the uiKit line with a colorful print.{" "}
-          <br />
-          Made of jersey cotton. T-shirt fits perfectly with jeans, pants or
-          shorts.
-        </p>
+        <p>{productDesc} </p>
       </div>
-      <div className="product-description-block">
+      {/* <div className="product-description-block">
         <i className="icon-cart" />
         <h4>Details and product description</h4>
         <p>
@@ -28,7 +24,7 @@ const Description = ({ show }: ProductDescriptionType) => {
           Made of jersey cotton. T-shirt fits perfectly with jeans, pants or
           shorts.
         </p>
-      </div>
+      </div> */}
     </section>
   );
 };

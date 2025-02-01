@@ -28,14 +28,14 @@ const Content = ({ product }: ProductContent) => {
   const { favProducts } = useSelector((state: RootState) => state.user);
   const isFavourite = some(
     favProducts,
-    (productId) => productId === product.id,
+    (productId) => productId === product.id
   );
 
   const toggleFav = () => {
     dispatch(
       toggleFavProduct({
         id: product.id,
-      }),
+      })
     );
   };
 
@@ -76,7 +76,7 @@ const Content = ({ product }: ProductContent) => {
       </div>
 
       <div className="product-content__filters">
-        <div className="product-filter-item">
+        {/* <div className="product-filter-item">
           <h5>Color:</h5>
           <div className="checkbox-color-wrapper">
             {productsColors.map((type) => (
@@ -90,8 +90,8 @@ const Content = ({ product }: ProductContent) => {
               />
             ))}
           </div>
-        </div>
-        <div className="product-filter-item">
+        </div> */}
+        {/* <div className="product-filter-item">
           <h5>
             Size: <strong>See size table</strong>
           </h5>
@@ -107,7 +107,7 @@ const Content = ({ product }: ProductContent) => {
               </select>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="product-filter-item">
           <h5>Quantity:</h5>
           <div className="quantity-buttons">
