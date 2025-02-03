@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shopping-site-sand.vercel.app/sitemap.xml
