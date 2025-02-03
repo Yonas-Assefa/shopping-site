@@ -8,12 +8,12 @@ import "../../styles/globals.css";
 // types
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
+import Head from "next/head";
 import Router from "next/router";
 import React, { Fragment } from "react";
 
 import { wrapper } from "../store";
 import * as gtag from "../utils/gtag";
-import Head from "next/head";
 const isProduction = process.env.NODE_ENV === "production";
 
 // only events on production
