@@ -13,7 +13,7 @@ import React, { Fragment } from "react";
 
 import { wrapper } from "../store";
 import * as gtag from "../utils/gtag";
-
+import Head from "next/head";
 const isProduction = process.env.NODE_ENV === "production";
 
 // only events on production
@@ -30,6 +30,14 @@ const poppins = Poppins({
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <Fragment>
+    <Head>
+      {" "}
+      {/* Add the Head component here */}
+      <meta
+        name="google-site-verification"
+        content="h4B0fvZUHUU98J4KI4IKeJ29FjmXywqjLKD2jdxbdkA"
+      />
+    </Head>
     <style jsx global>{`
       :root {
         --main-font: ${poppins.style.fontFamily};
