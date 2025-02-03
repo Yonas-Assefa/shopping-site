@@ -37,6 +37,17 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
         name="google-site-verification"
         content="h4B0fvZUHUU98J4KI4IKeJ29FjmXywqjLKD2jdxbdkA"
       />
+      <title>Shopping Site - Buy Quality Products Online</title>
+      <meta
+        name="description"
+        content="Best shopping site for high-quality auto parts and accessories."
+      />
+      <meta
+        name="keywords"
+        content="shopping, auto parts, car accessories, best deals"
+      />
+      <meta name="author" content="ShaktiTri Auto Parts" />
+      <meta name="robots" content="index, follow" />
     </Head>
     <style jsx global>{`
       :root {
