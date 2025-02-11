@@ -55,7 +55,7 @@ export const products = [
     productId: "T332010013",
     vehicle_category: "TVS",
     vehicle_description:
-      "A high-quality engine valve kit made in India, designed for TVS King auto rickshaws. Ensures optimal engine performance and longevity.",
+      "A high-quality engine valve kit made in India, designed for TVSa King auto rickshaws. Ensures optimal engine performance and longevity.",
     price: 79.99,
     quantityAvailable: 2,
     category: "T-shirt",
