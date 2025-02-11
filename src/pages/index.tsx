@@ -28,32 +28,16 @@ const IndexPage = () => {
   return (
     <>
       <Head>
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="Your Website Title" />
+        <title>ShaktiTri Spare Parts - Your Trusted Online Store</title>
         <meta
-          property="og:description"
-          content="A short description of your website or page."
+          name="description"
+          content="Find high-quality spare parts for three-wheelers at competitive prices. We offer a wide range of genuine and aftermarket parts to keep your vehicle running smoothly. Shop now for fast shipping and excellent customer service!"
         />
         <meta
-          property="og:image"
-          content="https://yourdomain.com/path-to-image.jpg" // Replace with actual image URL
+          name="keywords"
+          content="GUIDE CHAIN KIT ,BAJAJ, KIT ENGINE VALVE ,TVS KING, RUSH BOX KIT"
         />
-        <meta property="og:url" content="https://yourwebsite.com" />
-        <meta property="og:type" content="website" />
-        {/* Twitter Card Tags */}
-        <meta name="twitter:title" content="Your Website Title" />
-        <meta
-          name="twitter:description"
-          content="A short description of your website or page."
-        />
-        <meta
-          name="twitter:image"
-          content="/images/main-logo.webp" // Replace with actual image URL
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        {/* Other meta tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Your Website Title</title> {/* Static Title */}
+        <meta name="author" content="ShaktiTri" />
       </Head>
 
       <Layout>
