@@ -58,27 +58,58 @@ const Product = ({ productId }: ProductPageType) => {
   if (error) return <div>Failed to load product</div>;
   if (!product) return <div>Loading...</div>;
 
+  // Generate structured data for the product
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.vehicle_description,
+    image: product.images,
+    sku: product.productId,
+    productID: product.productId,
+    category: product.vehicle_category,
+    brand: {
+      "@type": "Brand",
+      name: "ShaktiTri Auto Parts",
+    },
+    offers: {
+      "@type": "Offer",
+      price: product.currentPrice,
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      url: `https://shaktitri.com/product/${productId}`,
+    },
+  };
+
   return (
     <>
       <Head>
-        <title>{product.name} - ShaktiTri Auto Parts</title>
+        <title>
+          {product.name} - Part ID: {product.productId} | ShaktiTri Auto Parts
+        </title>
         <meta
           name="description"
-          content={`Buy ${product.name} at the best price. Explore more products on our website.`}
+          content={`Buy ${product.name} (Part ID: ${product.productId}) at the best price. ${product.vehicle_description}`}
         />
         <meta
           name="keywords"
-          content={`${product.name}, products, buy online`}
+          content={`${product.name}, ${product.productId}, ${product.vehicle_category}, auto parts, vehicle parts, buy online`}
         />
         <meta
           property="og:title"
-          content={`${product.name} - ShaktiTri Auto Parts`}
+          content={`${product.name} - Part ID: ${product.productId} | ShaktiTri Auto Parts`}
         />
         <meta
           property="og:description"
-          content={`Buy ${product.name} at the best price.`}
+          content={`Buy ${product.name} (Part ID: ${product.productId}) at the best price. ${product.vehicle_description}`}
         />
         <meta property="og:image" content={product.images[0]} />
+        <meta property="og:type" content="product" />
+
+        {/* Schema.org structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Head>
 
       <Layout>
@@ -114,6 +145,43 @@ const Product = ({ productId }: ProductPageType) => {
                 show={showBlock === "description"}
               />
               <Reviews product={product} show={showBlock === "reviews"} />
+            </div>
+          </div>
+        </section>
+
+        {/* SEO-friendly product information section */}
+        <section
+          className="product-seo-info"
+          style={{
+            padding: "20px",
+            marginTop: "20px",
+            backgroundColor: "#f9f9f9",
+          }}
+        >
+          <div className="container">
+            <h2>Product Information</h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+              <div style={{ flex: "1 1 300px" }}>
+                <h3>Part Details</h3>
+                <ul style={{ listStyle: "none", padding: 0 }}>
+                  <li style={{ marginBottom: "10px" }}>
+                    <strong>Part ID:</strong> {product.productId}
+                  </li>
+                  <li style={{ marginBottom: "10px" }}>
+                    <strong>Product Name:</strong> {product.name}
+                  </li>
+                  <li style={{ marginBottom: "10px" }}>
+                    <strong>Category:</strong> {product.vehicle_category}
+                  </li>
+                  <li style={{ marginBottom: "10px" }}>
+                    <strong>Price:</strong> ₹{product.currentPrice}
+                  </li>
+                </ul>
+              </div>
+              <div style={{ flex: "1 1 300px" }}>
+                <h3>Product Description</h3>
+                <p>{product.vehicle_description}</p>
+              </div>
             </div>
           </div>
         </section>

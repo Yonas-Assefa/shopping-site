@@ -30,6 +30,8 @@ export type ProductType = {
   punctuation: PunctuationType;
   reviews: ReviewType[];
   vehicle_description: string;
+  productId: string;
+  vehicle_category: string;
 };
 
 export type ProductTypeList = {
@@ -41,6 +43,7 @@ export type ProductTypeList = {
   discount?: string;
   currentPrice?: number;
   vehicle_category: string;
+  productId: string;
 };
 
 export type ProductStoreType = {

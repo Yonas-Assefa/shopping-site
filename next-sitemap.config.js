@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://shopping-site-sand.vercel.app",
+  siteUrl: "https://www.shaktitriautoparts.online",
   generateRobotsTxt: true,
 };

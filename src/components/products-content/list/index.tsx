@@ -83,6 +83,7 @@ const ProductsContent = ({ filters }: ProductsContentProps) => {
               currentPrice={item.currentPrice}
               images={item.images}
               vehicle_category={item.vehicle_category}
+              productId={item.productId}
             />
           ))}
         </section>

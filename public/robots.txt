@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://shopping-site-sand.vercel.app
+Host: https://www.shaktitriautoparts.online
 
 # Sitemaps
-Sitemap: https://shopping-site-sand.vercel.app/sitemap.xml
+Sitemap: https://www.shaktitriautoparts.online/sitemap.xml

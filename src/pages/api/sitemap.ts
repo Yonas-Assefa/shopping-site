@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import products from "@/utils/data/products";
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   console.log(req);
-  const baseUrl = "https://shopping-site-sand.vercel.app";
+  const baseUrl = "https://www.shaktitriautoparts.online";
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
