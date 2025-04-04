@@ -42,7 +42,12 @@ const Header = ({ isErrorPage }: HeaderType) => {
     window.onscroll = function () {
       headerClass();
     };
-  }, []);
+
+    // Cleanup function
+    return () => {
+      window.onscroll = null;
+    };
+  }, [arrayPaths, router.pathname, isErrorPage]);
 
   const closeMenu = () => {
     setMenuOpen(false);
